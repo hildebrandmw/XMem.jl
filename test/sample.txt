@@ -1,0 +1,42 @@
+------------------------------------------------------------------------------------------
+Extensible Memory Benchmarking Tool (X-Mem) v2.4.2 for GNU/Linux on Intel x86-64 (AVX)
+Build date: Thu Jan 17 16:12:28 UTC 2019
+Indicated compiler(s): GNU C/C++ (gcc/g++) 
+(C) Microsoft Corporation 2015
+Originally authored by Mark Gottscho <mgottscho@ucla.edu>
+------------------------------------------------------------------------------------------
+
+MMAP_FILE: 0
+
+Working set per thread:               268435456 B == 262144 KB == 256 MB (65536 pages)
+Using MMap: 0
+
+-------- Running Benchmark: Test #1T (Throughput) ----------
+CPU NUMA Node: 0
+Memory NUMA Node: 0
+Chunk Size: 256-bit
+Access Pattern: forward sequential
+Read/Write Mode: read
+Number of worker threads: 48
+
+
+*** RESULTS***
+
+Iter #   0:    107146.676    MB/s
+Iter #   1:    107184.608    MB/s
+Iter #   2:    107127.186    MB/s
+Iter #   3:    107124.862    MB/s
+Iter #   4:    107136.467    MB/s
+
+
+Mean: 107144 MB/s
+Min: 107125 MB/s
+25th Percentile: 107127 MB/s
+Median: 107136 MB/s
+75th Percentile: 107147 MB/s
+95th Percentile: 107185 MB/s
+99th Percentile: 107185 MB/s
+Max: 107185 MB/s
+Mode: 107185 MB/s
+
+
