@@ -8,3 +8,7 @@
 ![Lifecycle](https://img.shields.io/badge/lifecycle-dormant-blue.svg) -->
 [![Build Status](https://travis-ci.com/hildebrandmw/XMemBenchmarker.jl.svg?branch=master)](https://travis-ci.com/hildebrandmw/XMemBenchmarker.jl)
 [![codecov.io](http://codecov.io/github/hildebrandmw/XMemBenchmarker.jl/coverage.svg?branch=master)](http://codecov.io/github/hildebrandmw/XMemBenchmarker.jl?branch=master)
+
+## Dependencies
+
+`scons libnuma-dev libhugetlbfs-dev`
