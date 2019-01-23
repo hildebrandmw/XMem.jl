@@ -1,4 +1,4 @@
-name = "XMemBenchmarker"
+name = "XMem"
 uuid = "1afc41d4-24f2-5040-a4ab-04ef89f55610"
 authors = ["Mark Hildebrand <mhildebrand@ucdavis.edu>"]
 version = "0.1.0"

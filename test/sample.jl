@@ -1,6 +1,6 @@
 @testset "Testing `sample.txt`" begin
     str = read(joinpath(@__DIR__, "sample.txt"), String)
-    d = XMemBenchmarker.parseresult(str)
+    d = XMem.parseresult(str)
 
     # Go through the list - make sure everything is correct
     vals = [
