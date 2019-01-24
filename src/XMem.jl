@@ -7,7 +7,7 @@ using CSV, DataFrames
 include("flags.jl")
 
 # Include the X-Mem executable
-const XMem = joinpath(@__DIR__, "..", "deps", "X-Mem", "bin", "xmem-linux-x64_avx")
+const XMEM = joinpath(@__DIR__, "..", "deps", "X-Mem", "bin", "xmem-linux-x64_avx")
 
 load(path) = CSV.File(path) |> DataFrame
 save(path, df) = CSV.write(path, df)
@@ -27,7 +27,7 @@ function dfmerge!(A, B)
 end
 
 # Single child process versions
-xmem(flags::Vector{String}; wait = true) = run(pipeline(`$XMem $flags`; stdout = devnull); wait = wait)
+xmem(flags::Vector{String}; wait = true) = run(pipeline(`$XMEM $flags`; stdout = devnull); wait = wait)
 
 function xmem(flagses::Vector{Vector{T}}) where {T}
 
