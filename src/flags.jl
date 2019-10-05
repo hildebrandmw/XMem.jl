@@ -11,7 +11,7 @@ flag_cpunuma(n)         = "-C$n"
 flag_memorynuma(n)      = "-M$n"
 flag_read()             = "-R"
 flag_write()            = "-W"
-flag_stride(n)          = "-S$N"
+flag_stride(n)          = "-S$n"
 flag_mmapfile(str)      = "-m$str"
 flag_outfile(str)       = "-f$str"
 
@@ -29,7 +29,8 @@ function getflags(;
         throughput = false,
         latency = false,
         cpunuma = 0,
-        memnuma = 0
+        memnuma = 0,
+        stride = 1,
     )
 
     flags = [
@@ -39,6 +40,7 @@ function getflags(;
         flag_workingset(workingset),
         flag_cpunuma(cpunuma),
         flag_memorynuma(memnuma),
+        flag_stride(stride),
     ]
 
     read && push!(flags, flag_read())

@@ -27,7 +27,7 @@ function dfmerge!(A, B)
 end
 
 # Single child process versions
-xmem(flags::Vector{String}; wait = true) = run(pipeline(`$XMEM $flags`; stdout = devnull); wait = wait)
+xmem(flags::Vector{String}; wait = true, stdout = devnull) = run(pipeline(`$XMEM $flags`; stdout = stdout); wait = wait)
 
 function xmem(flagses::Vector{Vector{T}}) where {T}
 
